@@ -3,15 +3,14 @@
 #include <math.h>
 
 int main () {
-    double a, n=5, sum=0, checker, pw=0, A=2; 
+    double a, n=10, sum=0, checker, A=2; 
     
-    for(a = 0; a <= n; a++)
+    for(a = 1; a <= n; a++)
     {
-    checker = pow (-A, pw);
-    pw++;
+    checker = pow (-A, a);
     sum += checker;
      printf("%lf\n", checker);
     }
-    printf("Total: %lf\n", sum);
+   printf("Total: %lf\n", sum);
     return 0;
 }
